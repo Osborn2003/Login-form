@@ -40,7 +40,6 @@
         .container .form-title {
           width: 100%;
           text-align: center;
-          
         }
         .container .form input{
           width: 100%;
@@ -65,7 +64,6 @@
           backdrop-filter: blur(10px);
           padding:.5rem;
         }
-        
         .container .form #error-message {
           display:block;
           width:100%;
@@ -86,8 +84,7 @@
         }
           .container .form #login-btn:active {
             background: linear-gradient( #ff00ff, #ff00ff);
-          }
-
+        }
         .ball-1{
           background: linear-gradient(#00ffe6, #ffcd20);
           content:" ";
@@ -98,7 +95,7 @@
           z-index: -1;
           top:10%;
           left:5%;
-          flex: 1 200px;
+         /* flex: 1 200px;*/
         }
         .ball-2{
           background:linear-gradient(#00ffe6, #ff4512);
@@ -108,7 +105,7 @@
           border-radius:50%;
           z-index: -1;
           position: fixed;
-          flex: 1 200px;
+         /* flex: 1 200px;*/
           bottom:10%;
           right: 5%;
         }
@@ -138,7 +135,6 @@
             min-width:90%;
           }
         }
-
     </style>
   </head>
   <body>
@@ -154,16 +150,13 @@
           <input type="password" class="input" id="password" placeholder="Password" required>
           <p id="error-message"></p>
           <br/>
-          
           <input type="submit" onclick="Function()" value="Login" id="login-btn">
-
         </div>  
           <div class="social-signIn">
             <div class="social-signIn-icon"><span><i class="bi bi-google"></i></span>Google</div>
             <div class="social-signIn-icon"><span><i class="bi bi-facebook"></i></span>Facebook</div>
           </div>
       </div>
-      
       <script type="text/javascript">
           let Function = function(){
             let username = document.getElementById("username").value;
@@ -187,9 +180,5 @@
               alert("Login Successful")
             }
           }
-
-            
-            
-
       </script>
   </body>
